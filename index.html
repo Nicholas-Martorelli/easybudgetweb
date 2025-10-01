@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBudget - Gestione Budget Personale</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons (CDN alternative) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="text-center">
+            <!-- Logo -->
+            <h1 class="hero-title">EasyBudget</h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                L'app semplice per organizzare le tue entrate mensili in categorie personalizzate e tenere traccia
+                delle spese.
+            </p>
+
+            <!-- Icons -->
+            <div class="hero-icons">
+                <div class="hero-icon" style="animation-delay: 0s;">
+                    <i data-lucide="trending-up"></i>
+                    <span>Crescita</span>
+                </div>
+                <div class="hero-icon" style="animation-delay: 0.1s;">
+                    <i data-lucide="pie-chart"></i>
+                    <span>Analisi</span>
+                </div>
+                <div class="hero-icon" style="animation-delay: 0.2s;">
+                    <i data-lucide="wallet"></i>
+                    <span>Risparmio</span>
+                </div>
+                <div class="hero-icon" style="animation-delay: 0.3s;">
+                    <i data-lucide="percent"></i>
+                    <span>Percentuali</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-outline">
+                    <i data-lucide="laptop"></i>
+                    Download Windows
+                </a>
+                <a href="#" class="btn btn-outline">
+                    <i data-lucide="smartphone"></i>
+                    Download Android
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative wave -->
+    <svg class="wave" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+            fill="var(--background)" />
+    </svg>
+</section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" style="background: rgba(255, 247, 237, 0.3);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Funzionalità</h2>
+                <p>Tutto quello che ti serve per gestire le tue finanze in modo intelligente</p>
+            </div>
+
+            <div class="features-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <!-- Feature 1: Salvadanaio -->
+                <div class="feature-card" style="animation-delay: 0s;">
+                    <div class="feature-icon">
+                        <div class="card-icon"><i data-lucide="piggy-bank"></i></div>
+                    </div>
+                    <h3>Salvadanaio</h3>
+                    <p>Crea obiettivi di risparmio personalizzati e monitora i tuoi progressi in modo semplice e
+                        intuitivo.</p>
+                </div>
+
+                <!-- Feature 2: Suddivisione Stipendio -->
+                <div class="feature-card" style="animation-delay: 0.1s;">
+                    <div class="feature-icon">
+                        <div class="card-icon"><i data-lucide="split"></i></div>
+                    </div>
+                    <h3>Suddivisione Stipendio</h3>
+                    <p>Dividi lo stipendio in percentuali o importi fissi. Suddividi lo stipendio nei salvadanai e
+                        scegli se trasferire automaticamente o meno le somme.</p>
+                </div>
+
+                <!-- Feature 3: Spese Manuali -->
+                <div class="feature-card" style="animation-delay: 0.2s;">
+                    <div class="feature-icon">
+                        <div class="card-icon"><i data-lucide="receipt"></i></div>
+                    </div>
+                    <h3>Spese Manuali</h3>
+                    <p>Registra manualmente tutte le tue spese mensili per sviluppare consapevolezza finanziaria e
+                        controllare meglio il tuo denaro.</p>
+                </div>
+
+                <!-- Feature 4: Categorie Personalizzate -->
+                <div class="feature-card" style="animation-delay: 0.3s;">
+                    <div class="feature-icon">
+                        <div class="card-icon"><i data-lucide="folder-open"></i></div>
+                    </div>
+                    <h3>Categorie Personalizzate</h3>
+                    <p>Organizza le tue spese in categorie completamente personalizzabili, adattando l'app alle tue
+                        esigenze specifiche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Guide Section -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <div class="section-title">
+                <h2>Come funziona EasyBudget</h2>
+                <p>Scopri la filosofia dietro l'app e come può aiutarti a migliorare la tua gestione finanziaria</p>
+            </div>
+
+            <div class="guide-card">
+                <div class="guide-header">
+                    <div class="guide-icon-box">
+                        <div class="card-icon"><i data-lucide="lightbulb"></i></div>
+                    </div>
+                    <div>
+                        <h3>La Filosofia del Controllo Manuale</h3>
+                        <p class="guide-description">Perché inserire manualmente le spese è più efficace</p>
+                    </div>
+                </div>
+
+                <div class="guide-content">
+                    <p>
+                        <strong>Inserire manualmente le spese</strong> non è solo una scelta tecnica, ma una strategia
+                        consapevole per sviluppare una migliore <strong>consapevolezza finanziaria</strong>.
+                    </p>
+
+                    <div class="guide-benefits">
+                        <h4>
+                            <i data-lucide="target"></i>
+                            I Vantaggi del Metodo Manuale
+                        </h4>
+                        <ul>
+                            <li>• <strong>Maggiore consapevolezza</strong> di ogni spesa effettuata</li>
+                            <li>• <strong>Controllo attivo</strong> del proprio denaro</li>
+                            <li>• <strong>Riflessione prima dell'acquisto</strong> e dopo la spesa</li>
+                            <li>• <strong>Abitudini finanziarie più sane</strong> nel lungo periodo</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        EasyBudget ti aiuta a prendere decisioni finanziarie più consapevoli attraverso un'interfaccia
+                        semplice e intuitiva, permettendoti di organizzare le tue entrate in categorie personalizzate e
+                        monitorare ogni movimento con precisione.
+                    </p>
+                </div>
+
+                <div class="privacy-buttons">
+                    <a href="#disclaimer" class="btn-default">
+<i data-lucide="book-open"></i>
+                        Guida Completa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Privacy Section -->
+<section id="privacy" class="privacy">
+    <div class="container">
+        <div class="section-title">
+            <h2>Privacy e Sicurezza</h2>
+            <p>La tua privacy è la nostra priorità. Ecco come proteggiamo i tuoi dati</p>
+        </div>
+
+        <div class="privacy-grid" style="grid-template-columns: repeat(2, 1fr);">
+            <!-- Privacy Point 1: Dati Raccolti -->
+            <div class="privacy-card" style="animation-delay: 0s;">
+                <div class="privacy-card-header">
+                    <div class="feature-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <div>
+                        <h3>Dati Raccolti</h3>
+                        <p>Raccogliamo solo email e password (criptata con standard industriali).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Point 2: Nessuna Condivisione -->
+            <div class="privacy-card" style="animation-delay: 0.1s;">
+                <div class="privacy-card-header">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <div>
+                        <h3>Nessuna Condivisione</h3>
+                        <p>I tuoi dati non vengono mai condivisi con terze parti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Point 3: Sicurezza Garantita -->
+            <div class="privacy-card" style="animation-delay: 0.2s;">
+                <div class="privacy-card-header">
+                    <div class="feature-icon">
+                        <i data-lucide="lock"></i>
+                    </div>
+                    <div>
+                        <h3>Sicurezza Garantita</h3>
+                        <p>Utilizziamo crittografia avanzata per proteggere tutte le informazioni.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Point 4: Cancellazione Dati -->
+            <div class="privacy-card" style="animation-delay: 0.3s;">
+                <div class="privacy-card-header">
+                    <div class="feature-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div>
+                        <h3>Cancellazione Dati</h3>
+                        <p>Puoi richiedere la cancellazione del tuo account e di tutti i dati in qualsiasi momento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-cta" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: start;">
+            <div>
+                <h3>
+                    <i data-lucide="check-circle"></i>
+                    I Tuoi Diritti
+                </h3>
+                <p>Hai il pieno controllo dei tuoi dati personali. In qualsiasi momento puoi richiedere:</p>
+                <ul>
+                    <li>
+                        <i data-lucide="check"></i>
+                        Accesso ai dati memorizzati
+                    </li>
+                    <li>
+                        <i data-lucide="check"></i>
+                        Modifica delle informazioni personali
+                    </li>
+                    <li>
+                        <i data-lucide="check"></i>
+                        Cancellazione completa del tuo account
+                    </li>
+                </ul>
+                <div class="privacy-buttons">
+                    <a href="mailto:easybudget@gmail.com" class="btn-default">
+                        <i data-lucide="mail"></i>
+                        Contattaci
+                    </a>
+                    <a href="PrivacyPolicy.html" class="btn-orange-outline">Leggi l'informativa completa</a>
+                </div>
+            </div>
+            
+            <div style="background: rgba(249, 115, 22, 0.05); border-radius: 0.75rem; padding: 1.5rem; text-align: center;">
+                <i data-lucide="mail" style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto 1rem; display: block;"></i>
+                <p style="font-weight: 600; color: var(--foreground); margin-bottom: 0.5rem;">Email di supporto</p>
+                <a href="mailto:easybudget@gmail.com" style="color: var(--primary); font-weight: 500; text-decoration: none;">
+                    easybudget@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="disclaimer">
+        <div class="container">
+            <div class="section-title">
+                <h2>Guida e Disclaimer</h2>
+            </div>
+
+            <div class="disclaimer-cards">
+                <!-- Guida all'uso -->
+                <div class="disclaimer-card">
+                    <div class="guide-header">
+                        <div class="guide-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Come Usare EasyBudget</h3>
+                        </div>
+                    </div>
+                    <div class="disclaimer-steps">
+                        <div class="disclaimer-step">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <div>
+                                <p class="disclaimer-step-title">1. Crea i Tuoi Salvadanai</p>
+                                <p>Definisci obiettivi di risparmio personalizzati e monitora i progressi.</p>
+                            </div>
+                        </div>
+                        <div class="disclaimer-step">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <div>
+                                <p class="disclaimer-step-title">2. Suddividi lo Stipendio</p>
+                                <p>Distribuisci le entrate mensili in categorie o salvadanai con percentuali o importi
+                                    fissi. Puoi scegliere se trasferire automaticamente le somme o farlo manualmente.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="disclaimer-step">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <div>
+                                <p class="disclaimer-step-title">3. Registra le Spese</p>
+                                <p>Inserisci manualmente ogni spesa per mantenere piena consapevolezza delle tue
+                                    abitudini finanziarie.</p>
+                            </div>
+                        </div>
+                        <div class="disclaimer-step">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <div>
+                                <p class="disclaimer-step-title">4. Monitora e Ottimizza</p>
+                                <p>Analizza le tue spese per categoria e ottimizza la gestione del tuo budget mese dopo
+                                    mese.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disclaimer importante -->
+                <div class="disclaimer-card"
+                    style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.05), white);">
+                    <div class="guide-header">
+                        <div class="guide-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" x2="12" y1="8" y2="12" />
+                                <line x1="12" x2="12.01" y1="16" y2="16" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Disclaimer Importante</h3>
+                        </div>
+                    </div>
+                    <div class="guide-content">
+                        <p>
+                            <strong>EasyBudget</strong> è uno strumento di gestione finanziaria personale progettato per
+                            aiutarti a organizzare e monitorare le tue entrate e spese.
+                        </p>
+
+                        <div class="disclaimer-warning">
+                            <div class="disclaimer-warning-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <path d="M8 13h2" />
+                                    <path d="M8 17h2" />
+                                    <path d="M14 13h2" />
+                                    <path d="M14 17h2" />
+                                </svg>
+                                <p><strong>Non è un consulente finanziario:</strong> L'app non fornisce consigli di
+                                    investimento o pianificazione finanziaria professionale.</p>
+                            </div>
+                            <div class="disclaimer-warning-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <path d="M8 13h2" />
+                                    <path d="M8 17h2" />
+                                    <path d="M14 13h2" />
+                                    <path d="M14 17h2" />
+                                </svg>
+                                <p><strong>Responsabilità dell'utente:</strong> Sei tu responsabile dell'accuratezza dei
+                                    dati inseriti e delle decisioni finanziarie prese.</p>
+                            </div>
+                            <div class="disclaimer-warning-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <path d="M8 13h2" />
+                                    <path d="M8 17h2" />
+                                    <path d="M14 13h2" />
+                                    <path d="M14 17h2" />
+                                </svg>
+                                <p><strong>Inserimento manuale:</strong> L'app richiede l'inserimento manuale dei dati
+                                    per favorire la consapevolezza finanziaria.</p>
+                            </div>
+                        </div>
+
+                        <p class="disclaimer-note">
+                            Per consulenze finanziarie professionali, ti consigliamo di rivolgerti a esperti certificati
+                            del settore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>EasyBudget</h3>
+                    <p>L'app semplice per gestire le tue finanze personali con consapevolezza.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Link Utili</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacypolicy">Privacy Policy</a></li>
+                        <li><a href="documentazione.html">Guida e Info</a></li>
+                        <li><a href="index.html#features">Funzionalità</a></li>
+                        <li><a href="index.html#guide">Come funziona</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Contatti</h4>
+                    <p>Per supporto, cancellazione account o informazioni:</p>
+                    <a href="mailto:easybudget@gmail.com">easybudget@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="current-year">2024</span> EasyBudget - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll per i link del footer
+        document.querySelectorAll('.footer-links button').forEach(button => {
+            button.addEventListener('click', function () {
+                const targetId = this.getAttribute('data-target');
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Aggiorna l'anno corrente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        // Smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida e Info - EasyBudget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .policy-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .policy-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+        
+        .policy-divider {
+            height: 2px;
+            background: var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--muted);
+            white-space: pre-line;
+        }
+        
+        .info-box {
+            background: var(--secondary);
+            border: 2px solid var(--primary);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .info-box-content {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            color: #92400E;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .feature-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.1);
+        }
+        
+        .feature-icon {
+            width: 2rem;
+            height: 2rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .feature-content {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-description {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            color: var(--muted);
+            white-space: pre-line;
+        }
+        
+        .important-section {
+            color: #DC2626;
+        }
+        
+        .important-section .section-content {
+            color: #DC2626;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .policy-container {
+                padding: 1rem;
+            }
+            
+            .policy-title {
+                font-size: 2rem;
+            }
+            
+            .feature-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav style="background: var(--primary); padding: 1rem 0;">
+        <div class="container">
+            <a href="index.html" class="back-button">
+                <i data-lucide="arrow-left"></i>
+                Torna alla Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Documentation Page -->
+    <div style="background: linear-gradient(135deg, var(--secondary), white); min-height: 100vh;">
+        <div class="policy-container">
+            <div class="policy-header">
+                <h1 class="policy-title">Guida EasyBudget</h1>
+                <div class="policy-divider"></div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Premessa</h2>
+                <p class="section-content">L'app nasce dall'idea di avere sotto controllo il proprio budget.
+Come potrete notare, all'interno dell'app non è prevista la possibilità di collegare una carta di credito: le spese vanno quindi inserite manualmente. Questa scelta è voluta, poiché oggi, utilizzando molto le carte di credito, non si presta attenzione a quanto facilmente si spende; ce ne accorgiamo solo quando arriva la notifica che il saldo della carta sta per esaurirsi. Inserendo invece le spese manualmente, si ha un'idea più chiara di quanto si spende e in quali categorie.</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Funzionalità</h2>
+                <p class="section-content">Scopri tutte le funzionalità che EasyBudget mette a tua disposizione:</p>
+            </div>
+
+            <div class="feature-card">
+                <i data-lucide="piggy-bank" class="feature-icon"></i>
+                <div class="feature-content">
+                    <h3 class="feature-title">Salvadanaio</h3>
+                    <p class="feature-description">Crea salvadanai nei quali inserire un obiettivo e aggiungere o togliere saldo, così da avere sempre sotto controllo i propri budget per le diverse attività o per i risparmi.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <i data-lucide="pie-chart" class="feature-icon"></i>
+                <div class="feature-content">
+                    <h3 class="feature-title">Suddivisione stipendio</h3>
+                    <p class="feature-description">Inserisci il tuo stipendio mensile e suddividilo in percentuali o in contanti, per pianificare le spese più rilevanti del mese. 
+Questa funzione prende spunto dalla nota tecnica del 40-30-30.
+
+👉 Ora puoi anche suddividere lo stipendio utilizzando le categorie dei salvadanai: una volta creata la suddivisione puoi scegliere se trasferire automaticamente le somme nei rispettivi salvadanai, oppure solo tenerne traccia senza movimento automatico.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <i data-lucide="wallet" class="feature-icon"></i>
+                <div class="feature-content">
+                    <h3 class="feature-title">Spese</h3>
+                    <p class="feature-description">Registra qualsiasi tipologia di spesa e tieni traccia di quanto spendi nel corso del mese.</p>
+                </div>
+            </div>
+
+            <div class="section important-section">
+                <h2 class="section-title">Disclaimer</h2>
+                <p class="section-content">L'app ha il solo scopo di supportare nella gestione del budget e dei risparmi. È in continuo aggiornamento e miglioramento.
+
+Si possono anche usare le funzionalità singolarmente, senza dover per forza utilizzare tutte le funzionalità insieme.
+
+EasyBudget non si collega a conti bancari, carte di credito o servizi finanziari esterni. 
+⚠️ I movimenti nei salvadanai e nelle suddivisioni stipendio hanno solo valore simulativo all'interno dell'app e non corrispondono a trasferimenti di denaro reali.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="info-box-content">💡 Suggerimento: Inserisci le spese subito dopo averle effettuate per mantenere il budget sempre aggiornato e preciso.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>EasyBudget</h3>
+                    <p>L'app semplice per gestire le tue finanze personali con consapevolezza.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Link Utili</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="documentation.html">Guida e Info</a></li>
+                        <li><a href="index.html#features">Funzionalità</a></li>
+                        <li><a href="index.html#guide">Come funziona</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Contatti</h4>
+                    <p>Per supporto, cancellazione account o informazioni:</p>
+                    <a href="mailto:easybudget@gmail.com">easybudget@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="current-year">2024</span> EasyBudget - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inizializza le icone Lucide
+        lucide.createIcons();
+        
+        // Aggiorna l'anno corrente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
